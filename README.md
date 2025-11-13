@@ -73,7 +73,7 @@ cd frontend
 npm install
 ```
 
-Run teh Frontend CLient
+Run the Frontend CLient
 
 ```bash
 # This will start the React dev server and open a browser window
