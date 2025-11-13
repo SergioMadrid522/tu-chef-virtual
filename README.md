@@ -25,7 +25,7 @@ Follow these instructions to get a copy of the project up and running on your lo
 ### Prerequisites
 
 * Node.js (v18 or newer)
-* A MySQL database (We recommend PlanetScale for a free cloud instance)
+* PostgreSQL
 * A Google AI (Gemini) API Key
 
 ### 1. Clone the Repository
