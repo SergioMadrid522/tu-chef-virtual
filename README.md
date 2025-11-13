@@ -10,9 +10,9 @@
 
 ## Tech Stack
 
-* **Frontend:** React, React-Bootstrap, SASS
+* **Frontend:** React, React-Bootstrap
 * **Backend:** Node.js, Express.js
-* **Database:** MySQL (Deployed on PlanetScale)
+* **Database:** MySQL (Deployed on NEON)
 * **Authentication:** JSON Web Tokens (JWT) & bcrypt.js
 * **AI:** Google (Gemini) AI API
 
