@@ -1,0 +1,62 @@
+/* src/menu/AsistenteIA/AsistenteIA.css */
+
+.chat-window {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto; /* ¡Crucial para el scroll! */
+  height: 100%;
+  padding-bottom: 20px;
+}
+
+.chat-bubble {
+  display: flex;
+  margin-bottom: 1rem;
+  max-width: 90%;
+}
+
+.chat-bubble-content {
+  display: flex;
+  align-items: flex-start;
+  padding: 0.75rem 1rem;
+  border-radius: 12px;
+}
+
+.chat-icon {
+  font-size: 1.5rem;
+  margin-right: 0.75rem;
+  flex-shrink: 0;
+}
+
+/* Burbuja del Asistente (izquierda) */
+.chat-bubble.model {
+  align-self: flex-start;
+}
+.chat-bubble.model .chat-bubble-content {
+  background-color: #f1f3f5; /* Gris claro */
+  color: #212529;
+  border-top-left-radius: 0;
+}
+.chat-bubble.model .chat-icon {
+  color: #28a745; /* Verde */
+}
+
+/* Burbuja del Usuario (derecha) */
+.chat-bubble.user {
+  align-self: flex-end;
+}
+.chat-bubble.user .chat-bubble-content {
+  background-color: #007bff; /* Azul primario */
+  color: white;
+  flex-direction: row-reverse; /* Pone el icono a la derecha */
+  border-top-right-radius: 0;
+}
+.chat-bubble.user .chat-icon {
+  margin-right: 0;
+  margin-left: 0.75rem;
+  color: #e0e0e0;
+}
+.form-control:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  border-color: #ccc !important; /* o el color que uses normalmente */
+}
