@@ -8,7 +8,7 @@
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 
 * **Frontend:** React, React-Bootstrap, SASS
 * **Backend:** Node.js, Express.js
