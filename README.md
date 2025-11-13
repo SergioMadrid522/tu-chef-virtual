@@ -1,33 +1,89 @@
-# Como ejecutar el proyecto?
+# Tu-Chef-Virtual (AI Recipe Assistant)
 
-Tendrás dos carpetas (Frontend, Backend)
+<p align="center">
+  <strong>A full-stack web application that acts as a personal AI recipe assistant, built by a team of software engineers.</strong>
+  <br />
+  This app uses the Google AI (Gemini) API to generate custom recipes based on a user's preferences, allergies, and available ingredients. It features a secure backend with JWT authentication and a relational database to manage user profiles.
+</p>
 
-## Frontend
+---
 
-1. Si marca error de dependencias ejecuta el siguiente comando:
+## 🛠 Tech Stack
 
-   ```bash
-   npm install @testing-library/dom @testing-library/jest-dom @testing-library/react @testing-library/user-event bootstrap react react-bootstrap react-bootstrap-icons react-dom react-router-bootstrap react-router-dom react-scripts sweetalert2 web-vitals
-   ```
+* **Frontend:** React, React-Bootstrap, SASS
+* **Backend:** Node.js, Express.js
+* **Database:** MySQL (Deployed on PlanetScale)
+* **Authentication:** JSON Web Tokens (JWT) & bcrypt.js
+* **AI:** Google (Gemini) AI API
 
-2. Ahora solo ejecuta:
+---
 
-   ```bash
-   npm start
-   ```
+## Getting Started
 
-   una vez que ejecutes este comando, se abrirá el navegador automaticamente.
+Follow these instructions to get a copy of the project up and running on your local machine.
 
-## Backend
+### Prerequisites
 
-1. Instala las siguientes dependencias:
+* Node.js (v18 or newer)
+* A MySQL database (We recommend PlanetScale for a free cloud instance)
+* A Google AI (Gemini) API Key
 
-   ```bash
-   npm install @google/generative-ai bcryptjs cors dotenv express jsonwebtoken mysql2 nodemon
-   ```
+### 1. Clone the Repository
 
-2. Antes de ejecutar el servidor, crea un archivo .env donde guardarás esto:
-   ```bash
-    GEMINI_API_KEY=<Inserta_tu_api_key_aqui>
-   ```
-3. Para la base de datos copia el script que esta en la carpeta _backend_ y pegalo en tu gestor de base de datos favorito
+```bash
+git clone [https://URL-DE-TU-REPO.git](https://URL-DE-TU-REPO.git)
+cd tu-chef-virtual
+```
+
+### 2. Backend Setup
+
+The backend server provides the RESTful API and handles authentication.
+
+```bash
+# Navigate to the backend folder
+cd backend
+
+# Install all required dependencies
+npm install
+```
+
+Create the .env file Create a .env file in the /backend root and add the following environment variables. This project uses JWT for authentication and MySQL for the database.
+
+```bash
+# Google AI API Key
+GEMINI_API_KEY=YOUR_GEMINI_API_KEY
+```
+
+Run the Backend Server
+
+```bash
+# This will start the server, typically on http://localhost:8080
+npm run dev
+```
+
+### 3. Frontend Setup
+The frontend is a React application that consumes the backend API.
+
+```bash
+# Open a new terminal.
+# Navigate to the frontend folder from the root directory.
+cd frontend
+
+# Install all required dependencies
+npm install
+```
+
+Run teh Frontend CLient
+
+```bash
+# This will start the React dev server and open a browser window
+npm start
+```
+
+You should now have the application running locally!
+
+---
+
+## Contributors
+1. D4nD4n01
+2. SergioMadrid522
