@@ -273,7 +273,7 @@ function Preferencias() {
                 rows={4}
                 placeholder="Ej: Me gusta la comida muy especiada, sin picante, prefiero cocinar al vapor, soy intolerante a la lactosa (pero sin ser alergia grave), me gusta experimentar con nuevas cocinas..."
                 value={customNotes}
-                onChange={(e) => setCustomNotes(e.customNotes)}
+                onChange={(e) => setCustomNotes(e.target.value)}
               />
               <Form.Text className="text-muted">
                 Aquí puedes añadir cualquier detalle extra. El Asistente IA lo
