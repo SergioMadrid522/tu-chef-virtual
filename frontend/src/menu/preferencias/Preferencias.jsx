@@ -71,7 +71,8 @@ function Preferencias() {
           success: "",
         });
 
-        errorAlert(status.error);
+        errorAlert("No se pudo encontrar el ID de usuario.");
+
         return;
       }
 
@@ -108,7 +109,7 @@ function Preferencias() {
       successAlert("¡Éxito!", status.success);
     }
     if (status.error) {
-      errorAlert(status.error);
+      errorAlert("No se pudo encontrar el ID de usuario.");
     }
   }, [status.success, status.error]);
 
