@@ -1,7 +1,7 @@
 // src/Routes.js
 
 // La URL base de tu servidor de autenticación
-const URL = "http://localhost:3111/api/";
+const URL = "https://tu-chef-virtual.onrender.com/api/";
 
 const ROUTES = {
   PREFERENCES: {
